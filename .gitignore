@@ -26,3 +26,7 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+
+# SASS Cache and Maps
+*.map
+.sass-cache/

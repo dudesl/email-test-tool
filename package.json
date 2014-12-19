@@ -1,0 +1,18 @@
+{
+  "name": "yaett",
+  "version": "0.1.0",
+  "homepage": "https://github.com/dudesl/email-test-tool",
+  "author": "dudesl <santiago.barchetta@mercadolibre.com>",
+  "description": "Yet Another Email Test Tool. Pequeño entorno de desarrollo y prueba para mails.",
+  "main": "index.html",
+  "license": "GPL 2.0",
+  "private": true,
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-browser-sync": "^1.5.3",
+    "grunt-inline-css": "^0.1.4",
+    "grunt-mailgun": "~0.0.3"
+  }
+}
