@@ -31,7 +31,7 @@ module.exports = function(grunt) {
     sass: {
       dev: {
         files: {
-          "css/screen.css": "sass/screen.sass"
+          "css/*.css": "sass/*.sass"
         }
       }
     },

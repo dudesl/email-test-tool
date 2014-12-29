@@ -32,8 +32,21 @@ Will execute the ```watch``` task for index.html
 #### command ```grunt sync```
 Will execute a set of task in this order:
 * ```browserSync``` for the ```inlined``` directory, for all the ```html``` files.
-*```inlinecss``` will put all the styles in inline mode, for ```index.html``` and will output the inlined file in the ```inline``` directory.
+* ```inlinecss``` will put all the styles in inline mode, for ```index.html``` and will output the inlined file in the ```inline``` directory.
 * ```watch``` will watch changes in the ```*.html``` files in the root and the ```*.sass``` files in sass directory.
+
+#### command ```grunt mailgun```
+Will execute the mailgun task whit the config object, declared at the start of ```Gruntfile.js```. The config object has 4 properties:
+* key:  A [mailgun api key](http://documentation.mailgun.com/quickstart.html#authentication)
+* sender: The 'from' name and adress.
+* recipient: One or more email addresses to send your messages to. Multiple addresses should be entered as an array.
+* subject: The subject of your email.
+* body (optional): If the src field is empty, mailgun-task will deliver a plain-text message whit the body content.
+
+This task will be useful whit litmus for test emails in multiple email clients. Litmus generate a fake email address for testing purpose. If we send the email whit mailgun to that fake email address, will be testing our html markup.
+
+#### command ```grunt sass```
+Will execute the sass compiler for all the files ```*.sass``` in the css directory.
 
 ### URL to run the project
 When you run ```grunt sync``` command, the task ```browserSync``` will deploy a local server in port 3000.
