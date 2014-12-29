@@ -26,12 +26,14 @@ This is the actual ```devDependencies``` package.json field
 ### Run
 In the root directory of our project:
 
-+ Whit the command ```grunt``` will execute the ```watch``` task for index.html
+#### command ```grunt```
+Will execute the ```watch``` task for index.html
 
-+ Whit the command ```grunt sync``` will execute a set of task in this order:
-⋅⋅* ```browserSync``` for the ```inlined``` directory, for all the ```html``` files.
-⋅⋅*```inlinecss``` will put all the styles in inline mode, for ```index.html``` and will output the inlined file in the ```inline``` directory.
-⋅⋅* ```watch``` will watch changes in the ```*.html``` files in the root and the ```*.sass``` files in sass directory.
+#### command ```grunt sync```
+Will execute a set of task in this order:
+* ```browserSync``` for the ```inlined``` directory, for all the ```html``` files.
+*```inlinecss``` will put all the styles in inline mode, for ```index.html``` and will output the inlined file in the ```inline``` directory.
+* ```watch``` will watch changes in the ```*.html``` files in the root and the ```*.sass``` files in sass directory.
 
 ### URL to run the project
 When you run ```grunt sync``` command, the task ```browserSync``` will deploy a local server in port 3000.
