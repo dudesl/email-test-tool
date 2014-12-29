@@ -43,7 +43,7 @@ Will execute the mailgun task whit the config object, declared at the start of `
 * subject: The subject of your email.
 * body (optional): If the src field is empty, mailgun-task will deliver a plain-text message whit the body content.
 
-This task will be useful whit litmus for test emails in multiple email clients. Litmus generate a fake email address for testing purpose. If we send the email whit mailgun to that fake email address, will be testing our html markup.
+This task will be useful whit [Litmus](https://litmus.com/) for test emails in multiple email clients. Litmus [Litmus](https://litmus.com/) a fake email address for testing purpose. If we send the email whit mailgun to that fake email address, will be testing our html markup.
 
 #### command ```grunt sass```
 Will execute the sass compiler for all the files ```*.sass``` in the css directory.
