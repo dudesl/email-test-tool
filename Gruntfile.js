@@ -24,7 +24,7 @@ module.exports = function(grunt) {
     watch: {
       sass: {
         files: ['sass/*.sass','*.html'],
-        tasks: ['sass:dev','inlinecss']
+        tasks: ['sass:dev','inlinecss', 'browserSync']
       }
     },
 
