@@ -1,17 +1,8 @@
 /******
 * Config Array
-* TODO : Make a config file
 ******/
 
-config = {
-  mailgun : {
-    key: 'your-api-key',
-    sender: 'your-email',
-    recipient: 'another-email',
-    subject: 'subject'
-  }
-}
-
+var config = require('./config.js');
 
 /******
 * Grunt Module
@@ -66,7 +57,7 @@ module.exports = function(grunt) {
 
     mailgun: {
       mailer: {
-        options: config.mailgun,
+        options: config.mailgun.getConfig(),
         src: ['inlined/index.html']
         }
       },
