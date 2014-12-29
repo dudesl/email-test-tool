@@ -32,7 +32,7 @@ Will execute the ```watch``` task for index.html
 #### command ```grunt sync```
 Will execute a set of task in this order:
 * ```browserSync``` for the ```inlined``` directory, for all the ```html``` files.
-* ```inlinecss``` will put all the styles in inline mode, for ```index.html``` and will output the inlined file in the ```inline``` directory.
+* ```inlinecss``` will put all the styles in inline mode, for ```index.html``` and will output the inlined file in the ```inlined``` directory.
 * ```watch``` will watch changes in the ```*.html``` files in the root and the ```*.sass``` files in sass directory.
 
 #### command ```grunt mailgun```
