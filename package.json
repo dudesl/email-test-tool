@@ -2,7 +2,7 @@
   "name": "yaett",
   "version": "0.1.0",
   "homepage": "https://github.com/dudesl/email-test-tool",
-  "author": "dudesl <santiago.barchetta@mercadolibre.com>",
+  "author": "dudesl <dudesl@gmail.com>",
   "description": "Yet Another Email Test Tool. Pequeño entorno de desarrollo y prueba para mails.",
   "main": "index.html",
   "license": "GPL 2.0",

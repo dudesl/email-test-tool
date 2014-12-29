@@ -5,10 +5,10 @@
 
 config = {
   mailgun : {
-    key: 'key-f1d1f5a41e5528beaeb63f35b6a7c80c',
-    sender: 'postmaster@sandboxd2cba16debb04c3a9d37570b82f0c884.mailgun.org',
-    recipient: 'f509403@emailtests.com',
-    subject: 'Prueba de concepto mailgun .....'
+    key: 'your-api-key',
+    sender: 'your-email',
+    recipient: 'another-email',
+    subject: 'subject'
   }
 }
 
@@ -24,15 +24,19 @@ module.exports = function(grunt) {
     watch: {
       sass: {
         files: ['sass/*.sass','*.html'],
-        tasks: ['sass:dev','inlinecss', 'browserSync']
+        tasks: ['sass:dist','inlinecss', 'browserSync']
       }
     },
 
     sass: {
-      dev: {
-        files: {
-          "css/*.css": "sass/*.sass"
-        }
+      dist: {
+        files: [{
+          expand: true,
+          cwd: 'sass',
+          src: ['*.sass', '*.scss'],
+          dest: "./css",
+          ext: ".css"
+        }]
       }
     },
 
