@@ -1,17 +1,17 @@
 var http = require('http');
 var mailgun = require('mailgun-js')({
-  apiKey: 'key-f1d1f5a41e5528beaeb63f35b6a7c80c',
-  domain: 'sandboxd2cba16debb04c3a9d37570b82f0c884.mailgun.org'
+  apiKey: 'your-api-key',
+  domain: 'domain-sanbox-mailgun'
 });
 
-var url = 'http://127.0.0.1:8080/checkout/emails/merchant_orders/90361536?render=true&force=true&locale=pt_BR';
+var url = 'url-to-render';
 var body = '';
 
 var data = {
-  from: 'Wrapper HTML <postmaster@sandboxd2cba16debb04c3a9d37570b82f0c884.mailgun.org>',
+  from: 'sender-mail',
   // to: 'santiago.barchetta@mercadolibre.com',
-  to: 'ea0a465@emailtests.com, barracuda@barracuda.emailtests.com, chkemltests@gapps.emailtests.com',
-  subject: 'Mail de pago aprobado payer/collector'
+  to: 'recipe-mail',
+  subject: 'subject'
 }
 
 http.get(url, function(res) {
