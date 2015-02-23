@@ -1,0 +1,15 @@
+{
+  "name": "meli-mail",
+  "version": "0.0.1",
+  "description": "A CLI Tool for build, test and send MELI mails",
+  "author": "Santiago Barchetta <dudesl@gmail.com, santiago.barchetta@mercadolibre.com",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "dependencies": {
+    "commander": "^2.6.0"
+  },
+  "bin": {
+    "meli-mail": "meli-mail.js"
+  }
+}
