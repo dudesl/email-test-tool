@@ -11,5 +11,8 @@
   },
   "bin": {
     "meli-mail": "meli-mail.js"
+  },
+  "devDependencies": {
+    "litmus-api": "^0.3.2"
   }
 }
