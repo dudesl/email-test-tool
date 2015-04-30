@@ -1,0 +1,22 @@
+{
+  "name": "mail-test",
+  "version": "0.0.0",
+  "description": "## Overview A tool for testing mailing mockup build whit node, grunt, sass and using browserSync, mailgun, litmus",
+  "main": "mailgun.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dudesl/email-test-tool.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dudesl/email-test-tool/issues"
+  },
+  "homepage": "https://github.com/dudesl/email-test-tool",
+  "devDependencies": {
+    "mailgun-js": "^0.6.8"
+  }
+}

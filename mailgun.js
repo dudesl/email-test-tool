@@ -1,17 +1,18 @@
 var http = require('http');
 var mailgun = require('mailgun-js')({
-  apiKey: 'your-api-key',
-  domain: 'domain-sanbox-mailgun'
+  apiKey: 'key-f1d1f5a41e5528beaeb63f35b6a7c80c',
+  domain: 'sandboxd2cba16debb04c3a9d37570b82f0c884.mailgun.org'
+  // apiKey: 'key',
+  // domain: 'sandbox'
 });
 
-var url = 'url-to-render';
+var url = 'http://localhost:3000';
 var body = '';
 
 var data = {
-  from: 'sender-mail',
-  // to: 'santiago.barchetta@mercadolibre.com',
-  to: 'recipe-mail',
-  subject: 'subject'
+  from: 'Mailgun Postmaster <postmaster@sandboxd2cba16debb04c3a9d37570b82f0c884.mailgun.org>',
+  to: 'santiago.barchetta@mercadolibre.com, emilse.depiero@mercadolibre.com, 193c5f2@emailtests.com',
+  subject: '[TEST] Certificado de retenciones por Ingresos Brutos de Córdoba'
 }
 
 http.get(url, function(res) {
